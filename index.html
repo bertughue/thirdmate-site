@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thirdmate</title>
+    <meta name="description" content="Thirdmate: kişisel kullanım için bir takip asistanı. A personal follow-up assistant." />
+    <style>
+      :root {
+        --bg: #fbfaf7;
+        --text: #1d1d1b;
+        --muted: #5f5e58;
+        --line: #e4e1d8;
+        --accent: #2f5d50;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #151514;
+          --text: #ecebe6;
+          --muted: #a9a79f;
+          --line: #2c2b28;
+          --accent: #8fc2b0;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+      h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+      h2 { font-size: 1.15rem; margin: 2em 0 0.4em; }
+      .tagline { color: var(--muted); margin: 0 0 2em; }
+      section + section { border-top: 1px solid var(--line); margin-top: 2.5em; padding-top: 0.5em; }
+      ul { padding-left: 1.2em; }
+      a { color: var(--accent); }
+      footer { color: var(--muted); font-size: 0.9rem; margin-top: 3em; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Thirdmate</h1>
+      <p class="tagline">Kişisel takip asistanı · A personal follow-up assistant</p>
+
+      <section lang="tr">
+        <h2>Nedir?</h2>
+        <p>
+          Thirdmate, şu anda yalnızca geliştiricisinin kullandığı kişisel bir asistandır. Herkese açık
+          bir hizmet değildir; kayıt olunamaz.
+        </p>
+        <p>
+          Sahibinin Telegram'dan yazdığı notlardan ve gönderdiği e-postalardan verdiği sözleri ve
+          başkalarından beklediği işleri çıkarır; gelen e-postalara bakarak beklenen bir yanıtın gelip
+          gelmediğini izler. Bunları takip eder ve yalnızca gerçekten gerektiğinde Telegram üzerinden
+          hatırlatır. Takvimi, günü bağlamıyla değerlendirmek için okur. Metinleri anlamlandırmak için
+          Anthropic'in Claude yapay zekâ hizmetini kullanır.
+        </p>
+        <h2>Google hesabıyla ne yapar?</h2>
+        <ul>
+          <li><strong>Gmail:</strong> yalnızca okuma. E-posta göndermez, silmez, değiştirmez.</li>
+          <li><strong>Google Takvim:</strong> yalnızca etkinlikleri okuma. Etkinlik oluşturmaz, değiştirmez.</li>
+        </ul>
+        <p>Ayrıntılar: <a href="privacy.html">Gizlilik Politikası</a>.</p>
+      </section>
+
+      <section lang="en">
+        <h2>What is it?</h2>
+        <p>
+          Thirdmate is a personal assistant that is currently used only by its developer. It is not a
+          public service and offers no sign-up.
+        </p>
+        <p>
+          It reads the notes its owner writes on Telegram and the e-mails the owner sends, picks out
+          the promises made and the things the owner is waiting for from others, and checks received
+          e-mail to see whether an awaited reply has arrived. It keeps track of them and sends a
+          reminder on Telegram only when it really matters. It reads the owner's calendar for context
+          about the day. It uses Anthropic's Claude AI service to understand the text.
+        </p>
+        <h2>What does it do with a Google account?</h2>
+        <ul>
+          <li><strong>Gmail:</strong> read-only. It never sends, deletes or changes e-mail.</li>
+          <li><strong>Google Calendar:</strong> reads events only. It never creates or changes events.</li>
+        </ul>
+        <p>Details: <a href="privacy.html">Privacy Policy</a>.</p>
+      </section>
+
+      <footer>
+        <a href="privacy.html">Gizlilik Politikası · Privacy Policy</a> ·
+        <a href="https://github.com/bertughue">GitHub</a>
+      </footer>
+    </main>
+  </body>
+</html>
