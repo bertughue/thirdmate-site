@@ -42,7 +42,7 @@
   <body>
     <main>
       <h1>Gizlilik Politikası · Privacy Policy</h1>
-      <p class="meta">Thirdmate · Yürürlük / Effective: 3 Ekim 2026 / 3 October 2026</p>
+      <p class="meta">Thirdmate · Yürürlük / Effective: 8 Ekim 2026 / 8 October 2026</p>
 
       <section lang="tr">
         <h2>Kimin için?</h2>
@@ -57,7 +57,10 @@
           <li>
             <strong>Gmail (yalnızca okuma):</strong> gönderilen e-postalar tamamıyla okunur (alıntılanan
             önceki mesajlar ve imzalar dahil); bunlardan yalnızca sahibinin kendi yazdığı metin (en fazla
-            yaklaşık 4.000 karakter), alıcılar, konu ve tarih tutulur. Gelen e-postaların gönderen,
+            yaklaşık 4.000 karakter), alıcılar, konu, tarih ve ekli dosyaların türü ile boyutu (adları
+            değil) tutulur. Bir hesap bağlandığında, bağlantıdan önceki 30 günün gönderilmiş e-postaları
+            da verilen sözleri bulmak için bir kez okunur. Sahibinin bağladığı her hesap (iş ve kişisel)
+            aynı şekilde işlenir. Gelen e-postaların gönderen,
             alıcı, konu, tarih, konuşma (thread) ve etiket bilgileri tutulur; Gmail'in döndürdüğü kısa
             önizleme metni saklanmaz. Gelen bir e-postanın içeriği yalnızca bir takip, günün özeti ya da
             sahibinin bir sorusu için gerektiğinde okunur ve kısa bir özete dönüştürülür; tam metni
@@ -96,9 +99,13 @@
           <li>
             <strong>Anthropic (yapay zekâ):</strong> sözleri bulmak, hatırlatmaları ve günün özetini
             yazmak için şu bilgiler Anthropic'in Claude API'sine gönderilir: sahibinin kendi yazdığı mesaj
-            ve e-posta metinleri (alıcı ve konu bilgileriyle), ilgili takip kayıtları, gerektiğinde gelen
+            ve e-posta metinleri; bir e-postanın konusu, alıcılarının görünen adları ve ekli dosyaların
+            türü (örneğin PDF ya da tablo; dosya adları değil); ilgili takip kayıtları; gerektiğinde gelen
             bir e-postanın içeriği (kısa bir özete dönüştürmek için) ve takvim etkinliklerinin
-            ayrıntıları. Anthropic bir ABD şirketidir; işleme ABD'de veya Anthropic'in hizmet verdiği
+            ayrıntıları. Alıcıların ve gönderenlerin e-posta adresleri gönderilmez (sahibinin metnin ya da
+            konunun içine kendisinin yazdığı bir adres, o metinle birlikte gider). Adlar ve adresler
+            bilgisayardaki kodda, bir e-postanın sözün verildiği kişiye gidip gitmediğini anlamak ve aynı
+            adı taşıyan kişileri birbirinden ayırmak için kullanılır. Anthropic bir ABD şirketidir; işleme ABD'de veya Anthropic'in hizmet verdiği
             başka ülkelerde yapılabilir. Anthropic, ticari koşulları gereği API verilerini model
             eğitiminde kullanmaz ve varsayılan olarak 30 gün içinde siler; kullanım politikasını ihlal
             ettiği şüphesiyle işaretlenen içerik 2 yıla kadar, yasa gerektiriyorsa daha uzun
@@ -184,7 +191,10 @@
           <li>
             <strong>Gmail (read-only):</strong> sent e-mails are read in full (including quoted earlier
             messages and signatures); of these, only the text the owner wrote (up to about 4,000
-            characters), the recipients, subject and date are kept. For received e-mails, the sender,
+            characters), the recipients, subject, date and the type and size of attached files (not their
+            names) are kept. When an account is connected, the sent e-mails of the 30 days before are also
+            read once, to find promises made in them. Every account the owner connects (work and
+            personal) is handled the same way. For received e-mails, the sender,
             recipients, subject, date, thread and labels are kept; the short preview text Gmail returns
             is not stored. The content of a received e-mail is read only when needed for a follow-up, a
             daily summary or a question from the owner, and is turned into a short summary; its full
@@ -223,9 +233,13 @@
           <li>
             <strong>Anthropic (AI):</strong> to find promises and to write reminders and the daily
             summary, the following is sent to Anthropic's Claude API: the text the owner wrote in
-            messages and e-mails (with recipients and subject), related tracked items, the content of a
-            received e-mail when needed (to turn it into a short summary), and calendar event details.
-            Anthropic is a US company; processing may take place in the United States or in other
+            messages and e-mails; an e-mail's subject, its recipients' display names and the type of its
+            attached files (such as PDF or spreadsheet; not file names); related tracked items; the
+            content of a received e-mail when needed (to turn it into a short summary); and calendar event
+            details. The e-mail addresses of recipients and senders are not sent (an address the owner
+            types into the text or the subject goes with that text). Names and addresses are used by
+            code on the computer, to tell whether an e-mail went to the person a promise was made to and
+            to tell people with the same name apart. Anthropic is a US company; processing may take place in the United States or in other
             countries where Anthropic operates. Under its commercial terms, Anthropic does not use API
             data for model training and by default deletes it within 30 days; content flagged for a
             possible usage-policy violation may be kept for up to 2 years, and longer where the law
